@@ -35,7 +35,7 @@ public class UserController {
     @ApiOperation(value = "获取用户信息",notes = "根据url的id来获取用户详细信息")
     @ApiImplicitParam(name = "id",value = "用户ID",required = true,dataType = "Integer",paramType = "path")
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public ResponseEntity<JsonResult> getUserJsonById(@PathVariable(value = "id") Integer id){
+    public ResponseEntity<JsonResult> getUserById(@PathVariable(value = "id") Integer id){
         JsonResult r = new JsonResult();
         try {
             User user = users.get(id);
