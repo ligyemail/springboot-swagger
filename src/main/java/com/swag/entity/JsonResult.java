@@ -8,7 +8,7 @@ package com.swag.entity;
 public class JsonResult {
     private String status = null;
     private Object result = null;
-    private Integer decode = 0;
+    private Integer decode = 0;//测试-修改情况
 
     public String getStatus() {
         return status;
